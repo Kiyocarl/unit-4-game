@@ -1,68 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Crystals Collector</title>
+<html lang="en">
 
-    <!-- jQuery Link -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-    <!-- Game Logic -->
-    <script type="text/javascript" src="assets/javascript/crystalsCollector.js"></script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-   
-  </head>
-  <body>
-
-    <h1 id="title">Crystals Collector!</h1>
-
-    <div id="rules-area">
-       
-     <ol>
-        <li>You will be given a random number at the start of the game.</li>
-
-         <li>There are four crystals below. By clicking on a crystal you       will add a specific amount of points to your total score.</li>
-
-          <ul>
-           <li id="red">Red</li> 
-           <li id="blue">Blue</li>
-           <li id="yellow">Yellow</li>
-           <li id="green">Green</li>
-          </ul>
-
-         <li>You win the game by matching your total score to random number,   you lose the game if your total score goes above the random         number.</li>
-
-         <li>The value of each crystal is hidden from you until you click       on   it.</li>
-
-        <li>Each time when the game starts, the game will change the values    of each crystal</li>
-     </ol>
-
-    </div>
-
-    <div id="screen">
-      <!-- Random Number Display -->
-      <div id="random-area">Number</div>
-      <!-- Wins/Losses Display -->
-      <div id="win-area">Wins</div>
-       <!-- Random Number Display -->
-       <div id="random-area">Number</div>
-       <!-- Wins/Losses Display -->
-       <div id="losses-area">losses</div>
-    </div>
-
-    <div>
-      <!-- Crystals -->
-      <div id="crystal-area"></div>
-      <div id="score-title">Your total score is:</div>
-      <!-- Score Display -->
-      <div id="score-area">Score</div>
-    </div>
-
-  </body>
-</html> 
-
-<script>
-</script>
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Here's how you play the game</h3>
+		</br>
+		<ol>
+			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four crystals below.</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
+			</ul>
+			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+		</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.jpg" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/js/game.js"></script>
+</body>
+</html>

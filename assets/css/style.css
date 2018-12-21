@@ -1,79 +1,65 @@
-body {
-  background-image: url("../images/background_img.jpg");
-  background-repeat: repeat;
+/* General Elements*/
+body{
+	background-image: url("../images/background.jpg")
 }
-
-#screen {
-  overflow: auto;
+div{
+	background-color: white;
+	margin: 10px;
+	width: 25%
 }
-
-#screen div {
-  float: left;
+div{
+	border: solid 2px antiquewhite;
+	padding: 10px;
 }
-
-#title {
-  width: 250px;
-  padding: 4px;
-  margin-bottom: 10px;
-  color: white;
-  background-color: chocolate;
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
 }
-
-#rules-area {
-  width: 400px;
-  height: 400px;
-  padding: 4px;
-  margin-bottom: 10px;
-  color: green;
-  background-color: bisque;
+h1{
+	font-size: 30pt;
 }
-
-#random-area {
-  width: 200px;
-  height: 100px;
-  padding: 4px;
-  font-size: 3vw;
-  color: purple;
-  background-color: mediumseagreen;
+ol{
+	list-style: decimal inside; 
 }
-
-#score-area {
-  width: 210px;
-  height: 100px;
-  padding: 4px;
-  color: ghostwhite;
-  background-color: darkcyan;
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
 }
-
-#score-title {
-  width: 210px;
-  padding: 4px;
-  margin-bottom: 10px;
-  color: white;
-  background-color: darkcyan;
+/* Specfic Elements*/
+div.header, div.gems{
+	background-color: #e0e0eb;
 }
-
-.crystals-button {
-  display: inline;
+div.header, div.instructions{
+	width: 50%;
 }
-
-.crystal-img {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  background-color: white;
-  border: solid;
-  border-color: lightblue;
+Classes 
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
 }
-
-#score-number {
-  font-size: 3vw;
+.userTotal{
+	width: 15%;
+	height: 60px;
 }
-
-#win-area {
-  height: 100px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  background-color: aqua;
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+/* IDs */
+#blue{
+  
+	color: #3092c7;
+}
+#green{
+	color: #00aa59;
+}
+#red{
+	color: #ec4b5f;
+}
+#yellow{
+	color: #ffc225;
 }
